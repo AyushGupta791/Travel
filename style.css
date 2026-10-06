@@ -1077,3 +1077,113 @@ footer {
     }
 
 }
+
+/* ================= TEAM GUIDELINES ================= */
+
+.team-guidelines {
+
+    background: #ffffff;
+
+    padding: 100px 0;
+
+}
+
+
+.guidelines-intro {
+
+    max-width: 700px;
+
+    color: var(--muted);
+
+    margin-top: 20px;
+
+}
+
+
+.guideline-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+.guideline-card {
+
+    background: var(--cream);
+
+    padding: 30px;
+
+    border: 1px solid var(--line);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+
+}
+
+
+.guideline-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(20, 33, 31, 0.08);
+
+}
+
+
+.guideline-number {
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.guideline-card h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1.45rem;
+
+    margin: 10px 0;
+
+}
+
+
+.guideline-card p {
+
+    color: var(--muted);
+
+    font-size: 0.92rem;
+
+}
+
+
+/* ================= MOBILE TEAM GUIDELINES ================= */
+
+@media (max-width: 760px) {
+
+    .guideline-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .team-guidelines {
+
+        padding: 70px 0;
+
+    }
+
+}
