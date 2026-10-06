@@ -1187,3 +1187,88 @@ footer {
     }
 
 }
+
+
+/* ================= SEARCH BAR ================= */
+
+.search-form {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+}
+
+
+.search-form input {
+
+    width: 170px;
+
+    padding: 9px 10px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    outline: none;
+
+    font-family: inherit;
+
+}
+
+
+.search-form input::placeholder {
+
+    color: #e0e8e5;
+
+}
+
+
+.search-form button {
+
+    padding: 9px 12px;
+
+    border: none;
+
+    background: var(--accent);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+}
+
+
+.search-form button:hover {
+
+    background: #bd5e31;
+
+}
+
+
+@media (max-width: 760px) {
+
+    .search-form {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .search-form input {
+
+        width: 100%;
+
+    }
+
+}

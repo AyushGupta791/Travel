@@ -16,35 +16,76 @@
 
     <header class="site-header">
 
-        <nav class="navbar">
+    <nav class="navbar">
 
-            <a href="index.html" class="logo">
-                Wander<span>Wise</span>
+        <!-- Website Logo -->
+
+        <a href="index.html" class="logo">
+            Wander<span>Wise</span>
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+
+        <button class="menu-toggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+
+        <!-- Navigation Bar -->
+
+        <div class="nav-links">
+
+            <!-- Home -->
+
+            <a href="index.html" class="active">
+                Home
             </a>
 
-            <button class="menu-toggle" aria-label="Open navigation">
-                ☰
-            </button>
 
-            <div class="nav-links">
+            <!-- About Us -->
 
-                <a href="index.html" class="active">Home</a>
+            <a href="about.html">
+                About Us
+            </a>
 
-                <a href="about.html">About Us</a>
 
-                <a href="contact.html">Contact Us</a>
+            <!-- Contact Us -->
 
-                <a href="#beaches">Beaches</a>
+            <a href="contact.html">
+                Contact Us
+            </a>
 
-                <a href="#temples">Temples</a>
 
-                <a href="#countries">Countries</a>
+            <!-- Search Form -->
 
-            </div>
+            <form class="search-form" id="searchForm">
 
-        </nav>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search destination..."
+                    aria-label="Search destination"
+                >
 
-    </header>
+                <button type="submit">
+                    Search
+                </button>
+
+                <button
+                    type="button"
+                    id="clearSearch"
+                >
+                    Clear
+                </button>
+
+            </form>
+
+        </div>
+
+    </nav>
+
+</header>
 
 
     <!-- ================= HOME HERO ================= -->

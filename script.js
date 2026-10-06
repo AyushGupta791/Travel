@@ -54,3 +54,66 @@ if (form) {
     });
 
 }
+
+// ================= SEARCH FUNCTION =================
+
+const searchForm = document.getElementById("searchForm");
+
+const searchInput = document.getElementById("searchInput");
+
+const clearSearch = document.getElementById("clearSearch");
+
+
+if (searchForm) {
+
+    searchForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const searchTerm =
+            searchInput.value.trim().toLowerCase();
+
+
+        if (searchTerm === "") {
+
+            alert("Please enter a destination to search.");
+
+            return;
+
+        }
+
+
+        const pageText =
+            document.body.innerText.toLowerCase();
+
+
+        if (pageText.includes(searchTerm)) {
+
+            alert(
+                "Destination found on this page!"
+            );
+
+        } else {
+
+            alert(
+                "Sorry, no matching destination was found."
+            );
+
+        }
+
+    });
+
+}
+
+
+if (clearSearch) {
+
+    clearSearch.addEventListener("click", function() {
+
+        searchInput.value = "";
+
+        searchInput.focus();
+
+    });
+
+}

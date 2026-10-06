@@ -25,39 +25,68 @@
 
     <nav class="navbar">
 
+        <!-- Website Logo -->
+
         <a href="index.html" class="logo">
             Wander<span>Wise</span>
         </a>
 
-        <button class="menu-toggle">
+
+        <!-- Mobile Menu Button -->
+
+        <button class="menu-toggle" aria-label="Open navigation">
             ☰
         </button>
 
+
+        <!-- Navigation Bar -->
+
         <div class="nav-links">
 
-            <a href="index.html">
+            <!-- Home -->
+
+            <a href="index.html" class="active">
                 Home
             </a>
+
+
+            <!-- About Us -->
 
             <a href="about.html">
                 About Us
             </a>
 
-            <a href="contact.html" class="active">
+
+            <!-- Contact Us -->
+
+            <a href="contact.html">
                 Contact Us
             </a>
 
-            <a href="index.html#beaches">
-                Beaches
-            </a>
 
-            <a href="index.html#temples">
-                Temples
-            </a>
+            <!-- Search Form -->
 
-            <a href="index.html#countries">
-                Countries
-            </a>
+            <form class="search-form" id="searchForm">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search destination..."
+                    aria-label="Search destination"
+                >
+
+                <button type="submit">
+                    Search
+                </button>
+
+                <button
+                    type="button"
+                    id="clearSearch"
+                >
+                    Clear
+                </button>
+
+            </form>
 
         </div>
 
